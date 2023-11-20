@@ -65,23 +65,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'InvoiceReader.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',  # Assuming you are using the djongo package
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'mongodb+srv://cluster0.k6mlfru.mongodb.net/',
-            'username': 'SimFil',
-            'password': 'Sommar2021',  # Replace with your actual password
-            'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-1',
-        },
-        'NAME': 'your_database_name',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

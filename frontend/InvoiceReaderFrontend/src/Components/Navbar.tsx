@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import UploadBtn from "./UploadBtn";
 
 const Navbar: React.FC = () => {
   return (
@@ -9,9 +10,7 @@ const Navbar: React.FC = () => {
           INVOICE
         </div>
         <div>
-          <button className="rounded-md text-lg bg-[#394867] text-white font-medium py-3 px-6 lg:py-4 lg:px-8 font font-semibold">
-            UPLOAD
-          </button>
+          <UploadBtn />
         </div>
       </div>
     </nav>

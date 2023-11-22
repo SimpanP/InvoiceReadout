@@ -8,7 +8,7 @@ class Invoice(models.Model):
     price = models.FloatField()
     refNumber = models.CharField(max_length=20)
     isPaid = models.BooleanField()
-    refrence = models.CharField(max_length=20)
+    reference = models.CharField(max_length=20)
     dueDate = models.DateField()
 
 class UploadedFile(models.Model):

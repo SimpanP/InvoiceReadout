@@ -1,20 +1,16 @@
 // src/components/FileUpload.tsx
 import React, { ChangeEvent, useState } from "react";
 import axios from "axios";
-
 const UploadBtn: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
-
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     setSelectedFile(file);
   };
-
   const handleUpload = async () => {
     if (selectedFile) {
       const formData = new FormData();
       formData.append("file", selectedFile);
-
       try {
         const response = await axios.post(
           "http://localhost:8000/api/upload/",
@@ -28,7 +24,6 @@ const UploadBtn: React.FC = () => {
       console.error("No file selected");
     }
   };
-
   return (
     <div>
       <input
@@ -37,7 +32,6 @@ const UploadBtn: React.FC = () => {
         onChange={handleFileChange}
       />
       <button onClick={handleUpload}>Upload</button>
-
       {selectedFile && (
         <div>
           {/* <p>Selected file: {selectedFile.name}</p>
@@ -47,5 +41,4 @@ const UploadBtn: React.FC = () => {
     </div>
   );
 };
-
 export default UploadBtn;

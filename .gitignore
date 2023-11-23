@@ -7,3 +7,9 @@ backend/InvoiceReader/InvoiceReader/__pycache__/settings.cpython-312.pyc
 
 backend/InvoiceReader/InvoiceReader/__pycache__/settings.cpython-312.pyc
 backend/InvoiceReader/InvoiceReader/__pycache__/urls.cpython-312.pyc
+*.pyc
+backend/InvoiceReader/invoiceApp/__pycache__/models.cpython-311.pyc
+backend/InvoiceReader/invoiceApp/__pycache__/serializers.cpython-311.pyc
+backend/InvoiceReader/invoiceApp/__pycache__/urls.cpython-311.pyc
+backend/InvoiceReader/invoiceApp/__pycache__/views.cpython-311.pyc
+backend/InvoiceReader/InvoiceReader/__pycache__/settings.cpython-311.pyc

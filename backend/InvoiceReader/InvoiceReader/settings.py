@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'InvoiceReader',
     'invoiceApp',
     'corsheaders',
+    'ml_app'
 ]
 
 MIDDLEWARE = [

@@ -28,7 +28,7 @@ const UploadBtn: React.FC = () => {
     <div>
       <input
         type="file"
-        accept=".pdf, .doc, .docx"
+        accept=".pdf, .doc, .docx .jpeg .png"
         onChange={handleFileChange}
       />
       <button onClick={handleUpload}>Upload</button>

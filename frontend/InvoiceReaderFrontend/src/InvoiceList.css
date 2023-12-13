@@ -1,0 +1,29 @@
+/* InvoiceList.css */
+.invoice-list-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  margin-left: 20px;
+}
+
+.invoice-list {
+  width: 60%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #9ba4b5;
+}
+
+.list-item {
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add more styling as needed */
